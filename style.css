@@ -1,0 +1,482 @@
+/* ############################## */
+/* ######### VARIABLES ########## */
+/* ############################## */
+
+:root {
+  /* Transition */
+  --transition : .33s;
+  /* White */
+  --white: #fff;
+  /* Green Color */
+  --primary-color : rgb(255, 128, 0);
+  --secondary-color : rgb(245, 160, 76);
+  --rgba-primary-color: rgba(255, 128, 0,0.4);
+}
+
+/* ############################## */
+/* ########### SETUP ############ */
+/* ############################## */
+
+.good-btn {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.good-btn a {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+
+  display: inline-block;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+
+  transition: var(--transition);
+}
+
+.good-btn a::after {
+  transition: var(--transition);
+  z-index: -1;
+}
+
+.good-btn a::before {
+  transition: var(--transition);
+  z-index: -1;
+}
+
+.good-btn-uppercase a {
+  text-transform: uppercase;
+}
+
+/* ############################## */
+/* ########## BOUTONS ########### */
+/* ############################## */
+
+
+/* bc-transition-vertical */
+
+.good-btn .bc-transition-vertical {
+  position: relative;
+  padding: 20px 30px;
+
+  font-weight: 800;
+  color: var(--primary-color);
+
+  border: 3px solid var(--primary-color);
+}
+
+.good-btn .bc-transition-vertical::after {
+  position: absolute;
+  height: calc(100% + 3px);
+  width: 0;
+
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+
+  background-color: var(--secondary-color);
+
+  content: ' ';
+}
+
+.good-btn .bc-transition-vertical:hover {
+  color: var(--white);
+
+  border: 3px solid var(--secondary-color);
+}
+
+.good-btn .bc-transition-vertical:hover::after {
+  width: calc(100% + 3px);
+}
+
+
+/* bc-transition-horizontal */
+
+.good-btn .bc-transition-horizontal {
+  position: relative;
+  padding: 20px 30px;
+
+  font-weight: 800;
+  color: var(--primary-color);
+
+  border: 3px solid var(--primary-color);
+}
+
+.good-btn .bc-transition-horizontal::after {
+  position: absolute;
+  height: 0;
+  width: calc(100% + 3px);
+
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: var(--secondary-color);
+
+  content: ' ';
+}
+
+.good-btn .bc-transition-horizontal:hover {
+  color: var(--white);
+
+  border: 3px solid var(--secondary-color);
+}
+
+.good-btn .bc-transition-horizontal:hover::after {
+  height: calc(100% + 3px);
+}
+
+
+/* bc-transition-both */
+
+.good-btn .bc-transition-both {
+  position: relative;
+  padding: 20px 30px;
+
+  font-weight: 800;
+  color: var(--primary-color);
+
+  border: 3px solid var(--primary-color);
+}
+
+.good-btn .bc-transition-both::after {
+  position: absolute;
+  height: 0;
+  width: 0;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
+  background-color: var(--secondary-color);
+
+  content: ' ';
+}
+
+.good-btn .bc-transition-both:hover {
+  color: var(--white);
+
+  border: 3px solid var(--secondary-color);
+}
+
+.good-btn .bc-transition-both:hover::after {
+  height: calc(100% + 3px);
+  width: calc(100% + 3px);
+}
+
+
+/* bc-transition-leaning-45 */
+
+.good-btn .bc-transition-leaning-45 {
+  position: relative;
+  padding: 20px 30px;
+
+  font-weight: 800;
+  color: var(--primary-color);
+
+  border: 3px solid var(--primary-color);
+
+  overflow: hidden;
+}
+
+.good-btn .bc-transition-leaning-45::after {
+  position: absolute;
+  height: 0;
+  width: 120%;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+
+  background-color: var(--secondary-color);
+
+  content: ' ';
+}
+
+.good-btn .bc-transition-leaning-45:hover {
+  color: var(--white);
+
+  border: 3px solid var(--secondary-color);
+}
+
+.good-btn .bc-transition-leaning-45:hover::after {
+  height: 300%;
+}
+
+
+/* bc-transition-leaning-225 */
+
+.good-btn .bc-transition-leaning-225 {
+  position: relative;
+  padding: 20px 30px;
+
+  font-weight: 800;
+  color: var(--primary-color);
+
+  border: 3px solid var(--primary-color);
+
+  overflow: hidden;
+}
+
+.good-btn .bc-transition-leaning-225::after {
+  position: absolute;
+  height: 0;
+  width: 120%;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(225deg);
+
+  background-color: var(--secondary-color);
+
+  content: ' ';
+}
+
+.good-btn .bc-transition-leaning-225:hover {
+  color: var(--white);
+
+  border: 3px solid var(--secondary-color);
+}
+
+.good-btn .bc-transition-leaning-225:hover::after {
+  height: 300%;
+}
+
+
+/* bc-transition-color */
+
+.good-btn .bc-transition-color {
+  position: relative;
+  padding: 20px 40px;
+
+  color: var(--white);
+
+  background-color: var(--primary-color);
+
+  border-radius: 5px;
+}
+
+.good-btn .bc-transition-color:hover {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+
+/* bc-transition-color-border */
+
+.good-btn .bc-transition-color-border {
+  position: relative;
+  padding: 20px 40px;
+
+  color: var(--primary-color);
+
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.good-btn .bc-transition-color-border:hover {
+  color: var(--white);
+
+  background-color: var(--secondary-color);
+
+  border: 1px solid var(--secondary-color);
+}
+
+
+/* bc-transition-color-border */
+
+.good-btn .border-transition-spacing {
+  position: relative;
+  padding: 20px;
+
+  color: var(--primary-color);
+}
+
+.good-btn .border-transition-spacing::after, .good-btn .border-transition-spacing::before {
+  position: absolute;
+
+  height: 1px;
+  width: 0;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: var(--primary-color);
+
+  content: ' ';
+}
+
+.good-btn .border-transition-spacing::after {
+  bottom: 0;
+}
+
+.good-btn .border-transition-spacing::before {
+  top: 0;
+}
+
+.good-btn .border-transition-spacing:hover {
+  letter-spacing: 2px;
+  color: var(--secondary-color);
+}
+
+.good-btn .border-transition-spacing:hover::after, .good-btn .border-transition-spacing:hover::before {
+  width: 100%;
+
+  background-color: var(--secondary-color);
+}
+
+
+/* bc-transition-color-border */
+
+.good-btn .border-transition-grow {
+  position: relative;
+  padding: 20px 40px;
+
+  color: var(--primary-color);
+  font-weight: 700;
+
+  border: 2px solid var(--primary-color);
+}
+
+.good-btn .border-transition-grow::after {
+  position: absolute;
+  height: calc(100% + 15px);
+  width: calc(100% + 15px);
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
+  border: 2px solid var(--secondary-color);
+
+  opacity: 0;
+
+  content: ' ';
+}
+
+.good-btn .border-transition-grow:hover {
+  color: var(--secondary-color);
+  border: 2px solid rgba(0,0,0,0);
+}
+
+.good-btn .border-transition-grow:hover::after {
+  width: 100%;
+  height: 100%;
+
+  opacity: 1;
+}
+
+
+/* bc-transition-border */
+
+.good-btn .bc-transition-border {
+  position: relative;
+  padding: 20px 30px;
+  box-sizing: border-box;
+
+  font-weight: 800;
+  color: var(--primary-color);
+
+  border: 3px solid var(--primary-color);
+}
+
+.good-btn .bc-transition-border::after {
+  position: absolute;
+  height: 0;
+  width: 100%;
+
+  left: 0;
+  top: 0;
+
+  background-color: var(--secondary-color);
+
+  content: ' ';
+}
+
+.good-btn .bc-transition-border::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  left: -3px;
+  top: -3px;
+
+  border: 3px solid var(--primary-color );
+
+  content: ' ';
+}
+
+.good-btn .bc-transition-border:hover {
+  color: var(--white);
+
+  border: 3px solid var(--secondary-color );
+}
+
+.good-btn .bc-transition-border:hover::after {
+  height: calc(100% + 3px);
+}
+
+.good-btn .bc-transition-border:hover::before {
+  top: 5px;
+  left: 5px;
+
+  border: 3px solid var(--secondary-color );
+}
+
+
+/* bc-transition-border */
+
+.good-btn .bc-transition-rgba {
+  position: relative;
+  padding: 20px 30px;
+  box-sizing: border-box;
+
+  font-weight: 800;
+  color: var(--primary-color);
+
+  border: 3px solid var(--primary-color);
+}
+
+.good-btn .bc-transition-rgba::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  right: -10px;
+  top: -10px;
+
+  background-color: var(--rgba-primary-color);
+
+  content: ' ';
+}
+
+.good-btn .bc-transition-rgba:hover {
+  left: 5px;
+  top: -5px;
+}
+
+.good-btn .bc-transition-rgba:hover::after {
+  top: 10px;
+  right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
