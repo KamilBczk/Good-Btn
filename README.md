@@ -30,7 +30,7 @@ This framework allows you to create html buttons simply. To be able to change th
 
 ## Demo
 
-To see a demo of all the available buttons you can go to :
+To see a demo of all the available buttons you can go to : https://kamilbiczyk.be/framework/good-btn/demo/
 
 
 [Back To The Top](#Good-Btn)
