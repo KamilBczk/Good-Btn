@@ -1,56 +1,45 @@
-Good Btn
-With this framework you can use many buttons easily.
+# Good-Btn
 
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+To include the framework :
 
-Prerequisites
-What things you need to install the software and how to install them
+```html
+<link rel="stylesheet" href="http://kamilbiczyk.be/framework/good-btn/style.css">
+```
 
-Give examples
-Installing
-A step by step series of examples that tell you how to get a development env running
+---
 
-Say what the step will be
+## Table of Contents
 
-Give the example
-And repeat
+- [Description](#description)
+- [Demo](#demo)
+- [Author Info](#author-info)
 
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+---
 
-Running the tests
-Explain how to run the automated tests for this system
+## Description
 
-Break down into end to end tests
-Explain what these tests test and why
+This framework allows you to create html buttons simply. To be able to change the color of the buttons, I invite you to take a look in the [Demo](#demo) section.
 
-Give an example
-And coding style tests
-Explain what these tests test and why
+#### Technologies
 
-Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
+- Pure css
 
-Built With
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+[Back To The Top](#Good-Btn)
 
-Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+---
 
-Authors
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
+## Demo
 
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+To see a demo of all the available buttons you can go to :
 
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+
+[Back To The Top](#Good-Btn)
+
+---
+
+## Author Info
+
+- Twitch - [Kamil_bczk](https://twitch.com/kamil_bczk)
+- Website - [Kamil Biczyk](https://kamilbiczyk.be)
+
+[Back To The Top](#Good-Btn)
