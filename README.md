@@ -18,7 +18,7 @@ To include the framework :
 
 ## Description
 
-This framework allows you to create html buttons simply. To be able to change the color of the buttons, I invite you to take a look in the [Demo](#demo) section.
+This framework allows you to create html buttons easly. To be able to change the color of the buttons, I invite you to take a look at the [Demo](#demo) section.
 
 #### Technologies
 
